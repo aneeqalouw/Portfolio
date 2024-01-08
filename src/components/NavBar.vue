@@ -5,7 +5,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav d-flex justify-content-end w-100">
+          <div class="navbar-nav d-flex justify-content-end w-100" id="links">
             <router-link to="/" class="nav-link active">
                 Home
             </router-link>
@@ -33,7 +33,6 @@
 <script>
 export default {
     
-    
 }
 </script>
 
@@ -41,5 +40,13 @@ export default {
 #navBar{
     background-image: linear-gradient(rgb(254, 146, 164),rgb(250, 166, 180),rgb(254, 204, 212));
 }
+#links{
+    padding: 20px;
+
+}
+/* a:hover{
+    font-weight: bold;
+    background-color: aliceblue;
+} */
 
 </style>
