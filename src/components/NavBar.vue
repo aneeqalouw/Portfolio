@@ -44,9 +44,9 @@ export default {
     padding: 20px;
 
 }
-/* a:hover{
+a:hover{
     font-weight: bold;
-    background-color: aliceblue;
-} */
+    color: aliceblue;
+}
 
 </style>
