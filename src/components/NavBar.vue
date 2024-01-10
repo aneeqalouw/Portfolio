@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 #navBar{
-    background-image: linear-gradient(rgb(254, 146, 164),rgb(250, 166, 180),rgb(254, 204, 212));
+  background-color: white;
 }
 #links{
     padding: 20px;

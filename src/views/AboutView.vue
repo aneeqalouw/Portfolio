@@ -2,10 +2,10 @@
   <div>
     <div class="row d-block d-md-flex align-items-center vh-100 m-auto ">
       <div id="col1" class="col d-flex align-items-center vh-100" >
-        <div class="box">
-          
+        <div class="img-wrapper">
+          <img src="https://drive.google.com/uc?id=1KiTZlFxPehXq_7rAtrPf7fQr9YJHiPqw" alt="profile" loading="lazy" class="img-fluid">
+          <img src="https://drive.google.com/uc?id=1VRDyEJvTOR7TjROzaStj9TWd5lAq6wSu" alt="thought" loading="lazy" class="img-fluid">
         </div>
-        <img src="https://drive.google.com/uc?id=1k3W1PyqkbquVY6yArubVyJHCxKRyanV5" alt="profile">
       </div>
       <div class="col my-5" id="col2">
           <h2 class="fs-1 d-1 fw-bold my-4" id="aboutHead">Who am I?</h2>
@@ -39,17 +39,33 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.box{
-  width: 15rem;
-  height: 20rem;
-  background-color: rgb(248, 127, 147);
-}
+
 img[alt='profile']{
   width: 15rem;
-  height: 20rem;
+  height: 18rem;
   position: absolute;
   left: 100px;
-  bottom: 70px;
+  bottom: 150px;
+}
+img[alt='thought']{
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  left: 310px;
+  bottom: 360px;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { 
+      transform: translate(0,  0px);
+     }
+    50%  { 
+      transform: translate(0, 15px); 
+    }
+    100%   { 
+      transform: translate(0, -0px);
+     }    
 }
 
 
