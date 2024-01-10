@@ -4,9 +4,9 @@
   </h2>
   <br /><br />
   <div class="row">
-    <div class="col" id="form">
+    <div class="col d-block" id="form">
       <h3>Send a message</h3>
-      <form action="" class="d-block">
+      <form action="https://formspree.io/f/xayrnwry" method="post" >
         <div class="row">
           <label>Name</label>
           <input type="text" placeholder="First name" required />
@@ -23,6 +23,8 @@
             placeholder="Message"
             required
           ></textarea>
+          <br><br>
+          <button class="btn btn-dark">Get in touch</button>
         </div>
       </form>
     </div>
