@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="row d-block d-md-flex align-items-center vh-100 m-auto ">
-      <div id="col1" class="col d-flex align-items-center vh-100" >
+      <div class="col d-flex align-items-center vh-100" >
         <div class="img-wrapper">
-          <img src="https://drive.google.com/uc?id=1KiTZlFxPehXq_7rAtrPf7fQr9YJHiPqw" alt="profile" loading="lazy" class="img-fluid">
+          <img src="https://drive.google.com/uc?id=1-urbJaEBfJnoZNPvErix9JRn35vFhyyq" alt="profile" loading="lazy" class="img-fluid">
           <img src="https://drive.google.com/uc?id=1VRDyEJvTOR7TjROzaStj9TWd5lAq6wSu" alt="thought" loading="lazy" class="img-fluid">
         </div>
       </div>
-      <div class="col my-5" id="col2">
+      <div class="col my-5">
           <h2 class="fs-1 d-1 fw-bold my-4" id="aboutHead">Who am I?</h2>
           <p class="lead fs-4" id="aboutDes">I'm Aneeqa Louw, an aspiring web developer from Cape Town.</p>
           <p class="fs-6" id="about">

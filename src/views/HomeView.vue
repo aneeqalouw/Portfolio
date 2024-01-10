@@ -1,7 +1,7 @@
 <template>
 	<header class="container-fluid">
 		<div class="header-content">
-			<h2>Hello, I'm <span>|Aneeqa Louw</span></h2>
+			<h2>Hello world, I'm <span>|Aneeqa</span></h2>
 			<p class="lead">Aspiring Web Developper</p>
       <router-link to="/projects">
         <button>Check out my Work -></button>
