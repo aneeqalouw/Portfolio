@@ -23,7 +23,7 @@
 
 <style scoped>
 #foot{
-    background-color: pink;
+    background-color: rgb(254, 219, 225);
     text-align: center;
 }
 #copyrighted{
