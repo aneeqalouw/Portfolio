@@ -1,13 +1,13 @@
 <template>
-    <div>
-
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="spinner-border text-dark" style="width: 3rem; height: 3rem;" role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {};
 </script>
 
 <style scoped>

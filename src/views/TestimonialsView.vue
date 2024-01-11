@@ -1,5 +1,5 @@
 <template>
-  <div class="container my-5">
+  <div class="container my-5" v-if="$store.state.testimonials">
     <h2 class="fs-1 fw-bold d-flex justify-content-center" id="head">
       What others have to say
     </h2>
@@ -50,18 +50,24 @@
       </div>
     </section>
   </div>
+  <div v-else>
+    <SpinnerComp></SpinnerComp>
+  </div>
 </template>
 
 <script>
+import SpinnerComp from '@/components/SpinnerComp.vue';
+
 export default {
-  computed: {
-    testimonials() {
-      return this.$store.state.testimonials;
+    computed: {
+        testimonials() {
+            return this.$store.state.testimonials;
+        },
     },
-  },
-  mounted() {
-    this.$store.dispatch("fetchTestimonials");
-  },
+    mounted() {
+        this.$store.dispatch("fetchTestimonials");
+    },
+    components: { SpinnerComp }
 };
 </script>
 

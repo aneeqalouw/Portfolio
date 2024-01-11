@@ -3,9 +3,11 @@
   <h2 class="lead fs-1 fw-bold d-flex justify-content-center my-3" id="head">
     Resume
   </h2>
+
   <br /><br />
-  <h3 class="lead fs-3 justify-content-center fw-bold d-flex">Education</h3>
-  <div class="container shadow" id="education">
+  <div class="container shadow" id="education" v-if="$store.state.education">
+    <h3 class="lead fs-3 justify-content-center fw-bold d-flex">Education</h3>
+    <br /><br />
     <div class="row" v-for="edu in education" :key="edu.id">
       <div class="col-md-12 col-lg-8 offset-lg-2">
         <article class="education-item">
@@ -38,34 +40,46 @@
       </div>
     </div>
   </div>
+  <div v-else>
+    <SpinnerComp></SpinnerComp>
+  </div>
   <br /><br />
   <br /><br />
 
   <!-- skills -->
-  <h2 class="lead fs-2 justify-content-center fw-bold d-flex">Skills</h2>
-  <br /><br />
-  <section class="d-flex justify-content-center justify-content-evenly" id="skills">
-    <div class="row" v-for="skill in skills" :key="skill.id">
-      <div class="flip-card" style="width: 15rem; height: 15rem">
-        <div class="flip-card-inside">
-          <div class="flip-card-front">
-            <img :src="skill.image" alt="icon" />
-          </div>
-          <div class="flip-card-behind">
-            <h2 class="lead fs-3">{{ skill.title }}</h2>
-            <p class="fs-5">{{ skill.level }}</p>
+  <div class="container" v-if="$store.state.skills">
+    <h3 class="lead fs-2 justify-content-center fw-bold d-flex">Skills</h3>
+    <section
+      class="d-flex justify-content-center justify-content-evenly"
+      id="skills"
+      v-if="$store.state.skills">
+      <div class="row" v-for="skill in skills" :key="skill.id">
+        <div class="flip-card" style="width: 15rem; height: 15rem">
+          <div class="flip-card-inside">
+            <div class="flip-card-front">
+              <img :src="skill.image" alt="icon" />
+            </div>
+            <div class="flip-card-behind">
+              <h2 class="lead fs-3">{{ skill.title }}</h2>
+              <p class="fs-5">{{ skill.level }}</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <br /><br />
-  <h4 class="d-flex justify-content-center">Hover for details!</h4>
-  <br /><br />
-  <br /><br />
+    </section>
+    <br /><br />
+    <h4 class="d-flex justify-content-center">Hover for details!</h4>
+    <br><br>
+    <br><br>
+  </div>
+  <div v-else>
+    <SpinnerComp></SpinnerComp>
+  </div>
 </template>
 
 <script>
+import SpinnerComp from "@/components/SpinnerComp.vue";
+
 export default {
   computed: {
     education() {
@@ -79,6 +93,7 @@ export default {
     this.$store.dispatch("fetchEducation");
     this.$store.dispatch("fetchSkills");
   },
+  components: { SpinnerComp },
 };
 </script>
 
@@ -95,7 +110,11 @@ export default {
 #education {
   width: 1000x;
   height: 500px;
-  background-image: linear-gradient(rgb(255, 244, 248), pink, rgb(249, 162, 176));
+  background-image: linear-gradient(
+    rgb(255, 244, 248),
+    pink,
+    rgb(249, 162, 176)
+  );
 }
 
 img[alt="icon"] {
@@ -103,10 +122,13 @@ img[alt="icon"] {
   height: 200px;
   mix-blend-mode: multiply;
 }
-#skills{
-  background-image: linear-gradient(rgb(255, 244, 248), pink, rgb(249, 162, 176));
+#skills {
+  background-image: linear-gradient(
+    rgb(255, 244, 248),
+    pink,
+    rgb(249, 162, 176)
+  );
   height: 350px;
-
 }
 
 .flip-card {
