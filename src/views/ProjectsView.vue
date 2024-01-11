@@ -47,6 +47,9 @@ export default {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  animation:slide 1.5s forwards ;
+  opacity: 0;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 #card{
     width: 400px;
@@ -57,5 +60,17 @@ export default {
 img{
     width: 35rem;
     height: 15rem;
+}
+
+/* animations */
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 </style>
