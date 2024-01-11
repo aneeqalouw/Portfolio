@@ -1,5 +1,5 @@
 <template>
-	<header class="container-fluid">
+	<header>
 		<div class="header-content">
 			<h2>Hello world, I'm <span>|Aneeqa</span></h2>
 			<p class="lead">Aspiring Web Developper</p>
@@ -41,6 +41,7 @@
 
 header {
 	height: 100vh;
+	width: 100%;
 	background-image: linear-gradient(white, pink, pink);
 	display: -webkit-box;
 	display: -ms-flexbox;

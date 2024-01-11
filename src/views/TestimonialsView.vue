@@ -70,6 +70,9 @@ export default {
   background: -webkit-linear-gradient(rgb(245, 56, 88), rgb(249, 113, 136));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation:slide 1.5s forwards ;
+  opacity: 0;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 img[alt="profile"] {
   width: 10rem;
@@ -82,5 +85,17 @@ img[alt="profile"] {
 .quote2{
     position: relative;
     float: right;
+}
+
+/* animations */
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 </style>
