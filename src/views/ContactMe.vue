@@ -6,7 +6,7 @@
   <div class="row">
     <div class="col d-block" id="form">
       <h3>Send a message</h3>
-      <form action="https://formspree.io/f/xayrnwry" method="post" >
+      <form action="https://formspree.io/f/xayrnwry" method="post">
         <div class="row">
           <label>Name</label>
           <input type="text" placeholder="First name" required />
@@ -23,11 +23,13 @@
             placeholder="Message"
             required
           ></textarea>
-          <br><br>
+          <br /><br />
           <button class="btn btn-dark">Get in touch</button>
         </div>
       </form>
     </div>
+    <br><br>
+    <br><br>
     <div class="col mx-5 my-5" id="details">
       <div class="row" id="detail">
         <div>
@@ -44,7 +46,7 @@
             />
           </svg>
         </div>
-        <p>albusiness057@gmail.com</p>
+        <p>aneeqalouw057@gmail.com</p>
       </div>
       <div class="row" id="detail">
         <div>
@@ -84,8 +86,12 @@
         </div>
         <p>Cape Town, South Africa</p>
       </div>
+      <br /><br />  
     </div>
   </div>
+  <br><br>
+  <br><br>
+  
 </template>
 
 <script>
@@ -106,12 +112,12 @@ export default {};
   background: -webkit-linear-gradient(rgb(245, 56, 88), rgb(249, 113, 136));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation:slide 1.5s forwards ;
+  animation: slide 1.5s forwards;
   opacity: 0;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-#detail{
-    display: flex;
+#detail {
+  display: flex;
 }
 
 /* animations */
