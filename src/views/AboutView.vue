@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row d-block d-md-flex align-items-center vh-100 m-auto ">
-      <div class="col d-flex align-items-center vh-100" >
+      <div class="col d-block d-md-flex align-items-center justify-content-center vh-100 w-25" >
         <div class="img-wrapper">
           <img src="https://drive.google.com/uc?id=1-urbJaEBfJnoZNPvErix9JRn35vFhyyq" alt="profile" loading="lazy" class="img-fluid">
           <img src="https://drive.google.com/uc?id=1VRDyEJvTOR7TjROzaStj9TWd5lAq6wSu" alt="thought" loading="lazy" class="img-fluid">
@@ -22,6 +22,7 @@
           </p>
       
       </div>
+      <br><br>
   </div>
   </div>
 </template>
@@ -35,6 +36,7 @@
 
 <style scoped>
 #aboutHead{
+  /* creating the text color gradient */
   background: -webkit-linear-gradient(rgb(245, 56, 88), rgb(249, 113, 136));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

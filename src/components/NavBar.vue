@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navBar">
+    <nav class="navbar navbar-expand-lg" id="navBar">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 #navBar{
-  background-color: white;
+  background-color: rgb(254, 219, 225);
 }
 #links{
     padding: 20px;
@@ -46,7 +46,6 @@ export default {
 }
 a:hover{
     font-weight: bold;
-    color: aliceblue;
 }
 
 </style>

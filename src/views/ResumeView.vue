@@ -3,7 +3,6 @@
   <h2 class="lead fs-1 fw-bold d-flex justify-content-center my-3" id="head">
     Resume
   </h2>
-
   <br /><br />
   <div class="container shadow" id="education" v-if="$store.state.education">
     <h3 class="lead fs-3 justify-content-center fw-bold d-flex">Education</h3>
@@ -50,10 +49,10 @@
   <div class="container" v-if="$store.state.skills">
     <h3 class="lead fs-2 justify-content-center fw-bold d-flex">Skills</h3>
     <section
-      class="d-flex justify-content-center justify-content-evenly"
+      class="d-block d-md-flex justify-content-center justify-content-evenly"
       id="skills"
       v-if="$store.state.skills">
-      <div class="row" v-for="skill in skills" :key="skill.id">
+      <div class="row d-flex justify-content-center" v-for="skill in skills" :key="skill.id">
         <div class="flip-card" style="width: 15rem; height: 15rem">
           <div class="flip-card-inside">
             <div class="flip-card-front">
@@ -123,12 +122,7 @@ img[alt="icon"] {
   mix-blend-mode: multiply;
 }
 #skills {
-  background-image: linear-gradient(
-    rgb(255, 244, 248),
-    pink,
-    rgb(249, 162, 176)
-  );
-  height: 350px;
+  height: max-content;
 }
 
 .flip-card {
