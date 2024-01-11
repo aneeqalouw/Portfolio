@@ -1,34 +1,14 @@
 <template>
-	<header>
-		<div class="header-content">
-			<h2>Hello world, I'm <span>|Aneeqa</span></h2>
-			<p class="lead">Aspiring Web Developper</p>
-      <router-link to="/projects">
-        <button>Check out my Work -></button>
-      </router-link>
-      <br><br>
-      <br><br>
-      <div class="links">
-      <div class="row">
-        <div class="col">
-          <a href="https://www.instagram.com/that.malay.chick?igsh=dzk4ZTN5cDdrNHpt">
-            <img src="https://drive.google.com/uc?id=19QOp-EEIB-9huNFbfH2Ke9r8J45wyXf_" alt="Instagram">
-          </a>
-        </div>
-        <div class="col">
-          <a href ="https://www.linkedin.com/in/aneeqa-louw-2684411ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-            <img src="https://drive.google.com/uc?id=1rHNVhesQg6hFYyCPgbrRKWFaH55v285l" alt="Linkedin">
-          </a>
-        </div>
-        <div class="col">
-          <a href="https://www.facebook.com/profile.php?id=100083356901831&mibextid=kFxxJD" target="_blank">
-            <img src="https://drive.google.com/uc?id=1wXWZr85x_La55A8wa43baSLTTqxKW5Hn" alt="Facebook">
-          </a>
-        </div>
-      </div>
-    </div>
+	<div class="d-block d-md-flex justify-content-center align-items-center" id="container">
+		<div class="main-heading">
+			<h1 class="text-light">Hello world, I'm <span class="fw-bold">|Aneeqa</span> <br> <br>
+				<span>
+					<p class="fs-5">Aspiring web developer</p>
+				</span>
+			</h1>
 		</div>
-	</header>
+	</div>
+
 </template>
 
 <script>
@@ -38,8 +18,27 @@
 </script>
 
 <style scoped>
+#container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(132deg, #fcfbfb,#ff0e7b, #fc1384,#fc2e7d,#f8b3fb,#f9b7d7);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 15s ease infinite;
+}
 
-header {
+h1 {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* transform: translateX(-50%) translateY(-50%); */
+  color: #030303;
+  font-weight: 400;
+  text-align: center;
+  font-size: 2em;
+  padding: 5px;
+}
+
+/* header {
 	height: 100vh;
 	width: 100%;
 	background-image: linear-gradient(white, pink, pink);
@@ -53,9 +52,9 @@ header {
 	-ms-flex-align: center;
 	align-items: center;
 	background-attachment: fixed;
-}
+} */
 
-header .header-content {
+/* header .header-content {
 	position: relative;
 	color: #010101;
 	text-align: center;
@@ -87,6 +86,13 @@ header button:hover {
 img{
   width: 30px;
   height: 30px;
+} */
+
+/* animations */
+@keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
 </style>

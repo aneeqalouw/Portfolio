@@ -1,6 +1,6 @@
 <template>
     <br><br>
-  <div class="container">
+  <div class="container" v-if="$store.state.projects">
     <div class="heading">
       <h2 class="fs-1 fw-bold d-flex justify-content-center">
         Some of my work
@@ -26,18 +26,24 @@
         </div>
     </section>
   </div>
+  <div v-else>
+    <SpinnerComp/>
+  </div>
 </template>
 
 <script>
+import SpinnerComp from '@/components/SpinnerComp.vue';
+
 export default {
-  computed: {
-    projects() {
-      return this.$store.state.projects;
+    computed: {
+        projects() {
+            return this.$store.state.projects;
+        },
     },
-  },
-  mounted() {
-    this.$store.dispatch("fetchProjects");
-  },
+    mounted() {
+        this.$store.dispatch("fetchProjects");
+    },
+    components: { SpinnerComp }
 };
 </script>
 
