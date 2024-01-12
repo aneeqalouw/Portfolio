@@ -89,8 +89,13 @@ export default {
     },
   },
   mounted() {
-    this.$store.dispatch("fetchEducation");
-    this.$store.dispatch("fetchSkills");
+    try{
+      this.$store.dispatch("fetchEducation");
+      this.$store.dispatch("fetchSkills");
+
+    } catch(e){
+      alert('No data found')
+    }
   },
   components: { SpinnerComp },
 };
