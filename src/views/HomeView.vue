@@ -8,7 +8,7 @@
         Hello world, I'm <span class="fw-bold">|Aneeqa</span> <br />
         <br />
         <span class="d-flex gap-1 justify-content-center">
-           <!-- using svg a icon exported from figma iconify (used thoughout ht project) -->
+           <!-- using a svg icon exported from figma iconify (used thoughout the project) -->
           <svg
             width="30"
             height="30"
