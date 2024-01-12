@@ -3,8 +3,8 @@
     <div class="row d-block d-md-flex align-items-center vh-100 m-auto ">
       <div class="col d-block d-md-flex align-items-center justify-content-center vh-100 w-25" >
         <div class="img-wrapper">
-          <img src="https://drive.google.com/uc?id=1-urbJaEBfJnoZNPvErix9JRn35vFhyyq" alt="profile" loading="lazy" class="img-fluid">
-          <img src="https://drive.google.com/uc?id=1VRDyEJvTOR7TjROzaStj9TWd5lAq6wSu" alt="thought" loading="lazy" class="img-fluid">
+          <img src="https://i.postimg.cc/ZYC2SqD8/vue-profile3.png" alt="profile" loading="lazy" class="img-fluid">
+          <img src="https://i.postimg.cc/8CFFBMzK/thought-bubble-1.png" alt="thought" loading="lazy" class="img-fluid">
         </div>
       </div>
       <div class="col my-5">

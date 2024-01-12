@@ -8,16 +8,16 @@
     </div>
     <br /><br />
     <br /><br />
-    <section class="row d-flex justify-content-center">
+    <section class="row d-block d-md-flex justify-content-center">
         <div id="card" v-for="project in projects" :key="project.name">
-            <div  class="card border-dark mb-3" style="width: 25rem; height: 25rem;">
-                <img :src="project.image" alt="project" class="img-fluid" loading="lazy">
+            <div  class="card border-dark mb-3">
+                <img :src="project.image" alt="project" class="img-fluid d-flex justify-content-center" loading="lazy">
                 <div class="card-body">
                     <h5 class="card-title">{{ project.name }}</h5>
                     <p class="card-text">
                         {{ project.description }}
                     </p>
-                    <div class="d-flex justify-content-evenly">
+                    <div class="d-flex justify-content-evenly gap-2">
                         <a :href=" project.gitHub" class="btn btn-dark" target="_blank">Github</a>
                         <a :href="project.netlify" class="btn btn-dark" target="_blank">Netlify</a>            
                     </div>
@@ -41,7 +41,12 @@ export default {
         },
     },
     mounted() {
+      try{
         this.$store.dispatch("fetchProjects");
+
+      } catch (e){
+        alert('No data found')
+      }
     },
     components: { SpinnerComp }
 };
@@ -64,8 +69,8 @@ export default {
     justify-content: space-evenly;
 }
 img{
-    width: 35rem;
-    height: 15rem;
+    width: 300px;
+    height: 200px;
 }
 
 /* animations */

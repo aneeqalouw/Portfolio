@@ -40,7 +40,7 @@
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/aneeqa-louw-2684411ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            href="https://www.linkedin.com/in/aneeqa-louw-2684411ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"
           >
             <svg
               width="20"
@@ -62,7 +62,7 @@
               </defs>
             </svg>
           </a>
-          <a href="https://github.com/aneeqalouw">
+          <a href="https://github.com/aneeqalouw" target="_blank">
             <svg
               width="20"
               height="20"
