@@ -3,8 +3,11 @@
     Contact me
   </h2>
   <br /><br />
-  <div class="row d-flex justify-content-center ">
-    <div class="col d-block" id="form">
+
+  <!-- form -->
+  <div class="container">
+    <div class="row d-block d-md-flex justify-content-center gap-5 ">
+    <div class="col d-block p-3" id="form">
       <h3>Send a message</h3>
       <form action="https://formspree.io/f/xayrnwry" method="post">
         <div class="row">
@@ -40,7 +43,7 @@
 
 
     <!-- details -->
-    <div class="col" id="details" style="padding-top: 80px;">
+    <div class="col my-4 d-block" id="details" style="padding-top: 80px;">
       <div class="row" id="detail">
         <div>
           <a href="mailto:aneeqalouw057@gmail.com?">
@@ -109,6 +112,9 @@
 
     <br /><br />
   </div>
+
+  </div>
+
   <br /><br />
   <br /><br />
   <br /><br />
@@ -120,13 +126,9 @@ export default {};
 </script>
 
 <style scoped>
-/* body{
-    text-align: center;
-} */
+
 #form {
-  display: block;
-  padding: 30px;
-  width: 300px;
+  width: 200px;
   height: 500px;
 }
 #head {

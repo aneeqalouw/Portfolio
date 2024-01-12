@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="container">
     <div class="row d-block d-md-flex align-items-center vh-100 m-auto ">
-      <div class="col d-block d-md-flex align-items-center justify-content-center vh-100 w-25" >
+      <div class="col d-none d-lg-flex align-items-center justify-content-center vh-100 w-25" >
         <div class="img-wrapper">
           <img src="https://i.postimg.cc/ZYC2SqD8/vue-profile3.png" alt="profile" loading="lazy" class="img-fluid">
           <img src="https://i.postimg.cc/8CFFBMzK/thought-bubble-1.png" alt="thought" loading="lazy" class="img-fluid">
         </div>
       </div>
-      <div class="col my-5">
+      <div class="col my-3">
           <h2 class="fs-1 d-1 fw-bold my-4" id="aboutHead">Who am I?</h2>
           <p class="lead fs-4" id="aboutDes">I'm Aneeqa Louw, an aspiring web developer from Cape Town.</p>
           <p class="fs-6" id="about">
@@ -24,7 +24,7 @@
       </div>
       <br><br>
   </div>
-  </div>
+</div>
 </template>
 
 <script>
