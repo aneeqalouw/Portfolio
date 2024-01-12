@@ -7,7 +7,7 @@
   <!-- form -->
   <div class="container">
     <div class="row d-block d-md-flex justify-content-center gap-5 ">
-    <div class="col d-block p-3" id="form">
+    <div class="col d-block" id="form">
       <h3>Send a message</h3>
       <form action="https://formspree.io/f/xayrnwry" method="post">
         <div class="row">
@@ -128,8 +128,12 @@ export default {};
 <style scoped>
 
 #form {
-  width: 200px;
-  height: 500px;
+  width: 500px;
+  height: 700px;
+  padding: 80px;
+  border: solid black;
+  
+
 }
 #head {
   background: -webkit-linear-gradient(rgb(245, 56, 88), rgb(249, 113, 136));
