@@ -56,6 +56,7 @@ export default {
 .heading {
   background: -webkit-linear-gradient(rgb(245, 56, 88), rgb(249, 113, 136));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   animation:slide 1.5s forwards ;

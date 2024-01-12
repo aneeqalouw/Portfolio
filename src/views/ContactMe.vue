@@ -3,37 +3,48 @@
     Contact me
   </h2>
   <br /><br />
-  <div class="row">
+  <div class="row d-flex justify-content-center ">
     <div class="col d-block" id="form">
       <h3>Send a message</h3>
       <form action="https://formspree.io/f/xayrnwry" method="post">
         <div class="row">
           <label>Name</label>
-          <input type="text" placeholder="First name" required />
+          <input type="text" placeholder="First name" required name="name" />
         </div>
+        <br /><br />
         <div class="row">
           <label>Email</label>
-          <input type="text" placeholder="Email address" required />
+          <input
+            type="text"
+            placeholder="Email address"
+            required
+            name="email"
+          />
         </div>
+        <br /><br />
         <div class="row">
           <label>Message</label>
           <textarea
             cols="30"
             rows="10"
-            placeholder="Message"
+            placeholder="Your message"
             required
+            name="message"
           ></textarea>
-          <br /><br />
-          <button class="btn btn-dark">Get in touch</button>
+          <button class="btn btn-dark my-3">Get in touch</button>
         </div>
       </form>
     </div>
-    <br><br>
-    <br><br>
-    <div class="col mx-5 my-5" id="details">
+    <br /><br />
+    <br /><br />
+
+
+    <!-- details -->
+    <div class="col" id="details" style="padding-top: 80px;">
       <div class="row" id="detail">
         <div>
-          <svg
+          <a href="mailto:aneeqalouw057@gmail.com?">
+            <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -45,12 +56,15 @@
               fill="black"
             />
           </svg>
+          </a>
+
         </div>
         <p>aneeqalouw057@gmail.com</p>
       </div>
       <div class="row" id="detail">
         <div>
-          <svg
+          <a href="tel:+27-83-424-6185">
+            <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -62,12 +76,15 @@
               fill="black"
             />
           </svg>
+          </a>
+
         </div>
         <p>+27 83 424 6185</p>
       </div>
       <div class="row" id="detail">
         <div>
-          <svg
+          <a href="https://www.google.com/maps/d/u/0/viewer?mid=1lhs71HbZ6S6cAR6VQVrpW2dolhw&ll=-33.98215743335129%2C18.38364600000002&z=12">
+            <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -83,15 +100,19 @@
               fill="black"
             />
           </svg>
+
+          </a>
         </div>
         <p>Cape Town, South Africa</p>
       </div>
-      <br /><br />  
     </div>
+
+    <br /><br />
   </div>
-  <br><br>
-  <br><br>
-  
+  <br /><br />
+  <br /><br />
+  <br /><br />
+  <br /><br />
 </template>
 
 <script>
@@ -111,14 +132,13 @@ export default {};
 #head {
   background: -webkit-linear-gradient(rgb(245, 56, 88), rgb(249, 113, 136));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: slide 1.5s forwards;
   opacity: 0;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-#detail {
-  display: flex;
-}
+
 
 /* animations */
 @keyframes slide {
