@@ -65,6 +65,7 @@ img[alt='thought']{
 
 /* animations */
 @keyframes float {
+  /* animation for floating thought bubble */
     0% { 
       transform: translate(0,  0px);
      }
