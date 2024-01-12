@@ -5,7 +5,7 @@
     
         Copyright &copy; <span>{{ year }} </span>
         <span> All rights reserved</span> <br />
-        <span class="d-flex gap-3 justify-content-center">
+        <span class="col-12 gap-3 justify-content-center">
           <!-- using svg icons exported from figma iconify -->
           <a
             href="https://www.instagram.com/that.malay.chick?igsh=dzk4ZTN5cDdrNHpt"
