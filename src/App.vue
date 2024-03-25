@@ -4,7 +4,6 @@
     <router-view/>
     <div style="display: none;">
       <SpinnerComp></SpinnerComp> 
-
     </div> 
   </main>
   <FooterComp></FooterComp>

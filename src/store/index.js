@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-const dataUrl = 'https://aneeqalouw.github.io/VuePortfolioData/data/'
+const dataUrl = 'https://aneeqalouw.github.io/PortfolioData/data/'
 export default createStore({
   state: {
     education: null,
@@ -26,7 +26,6 @@ export default createStore({
   actions: {
     async fetchEducation(context){
       let result = await fetch(dataUrl)
-      console.log(result)
       let {education} = await result.json()
       context.commit('setEducation', education)
     },

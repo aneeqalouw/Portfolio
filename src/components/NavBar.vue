@@ -1,12 +1,12 @@
 <template>
-    <nav class="navbar navbar-expand-lg" id="navBar">
+    <nav class="navbar navbar-expand-lg bg-black border-bottom" id="navBar" data-bs-theme="dark">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav d-flex justify-content-end w-100" id="links">
-            <router-link to="/" class="nav-link active">
+          <div class="navbar-nav mx-auto gap-3 fs-5" id="links">
+            <router-link to="/" class="nav-link active lead">
                 Home
             </router-link>
             <router-link to="/about" class="nav-link active">
@@ -37,15 +37,12 @@ export default {
 </script>
 
 <style scoped>
-#navBar{
-  background-color: rgb(254, 219, 225);
+nav a.router-link-exact-active {
+  font-weight: bold;
+  
 }
-#links{
-    padding: 20px;
-
-}
-a:hover{
-    font-weight: bold;
+a:hover {
+  color: #e80b79;
 }
 
 </style>

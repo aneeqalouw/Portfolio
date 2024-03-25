@@ -1,29 +1,27 @@
 <template>
-  <div class="container">
-    <div class="row d-block d-md-flex align-items-center vh-100 m-auto ">
-      <div class="col d-none d-lg-flex align-items-center justify-content-center vh-100 w-25" >
-        <div class="img-wrapper">
-          <img src="https://i.postimg.cc/ZYC2SqD8/vue-profile3.png" alt="profile" loading="lazy" class="img-fluid">
-          <img src="https://i.postimg.cc/8CFFBMzK/thought-bubble-1.png" alt="thought" loading="lazy" class="img-fluid">
-        </div>
-      </div>
-      <div class="col my-3">
-          <h2 class="fs-1 d-1 fw-bold my-4" id="aboutHead">Who am I?</h2>
-          <p class="lead fs-4" id="aboutDes">I'm Aneeqa Louw, an aspiring web developer from Cape Town.</p>
-          <p class="fs-6" id="about">
+  <div class="container-fluid vh-100 text-white" id="container">
+    <br><br>
+    <h2 class="display-4 fw-bold">About me</h2>
+    <br><br>
+    <div class="container shadow d-flex justtify-content-center" id="block">
+      <div class="row" id="#text">
+          <p class="lead fs-3">I'm Aneeqa Louw, a 21 year old Junior Web Developer from Cape Town.</p>
+          <p class="fs-5">
             I started my coding journey back in high school, 2018, doing Delphi and
-            MySQL. Since then I've had a knack for computing and I plan to continue 
-            to up-skill myself in the near future, during and after my studies.
+            MySQL. Since then I've had a knack for computer programmimg and I plan to continue 
+            to up-skill myself in the near future, during and after my studies. <br><br>I'm a quick learner, as well as a fast but accurate worker.
           </p>
-          <p class="fs-6" id="about">
+          <p class="fs-5">
             I am currently studying at Life Choices Coding Academy and will complete
             the programme in March, continuing on to Life Choices Studio, where i will
             intern and become ready for employment.
-          </p>
-      
+          </p> 
+          <br><br><br><br>
+          <router-link to="/projects">
+            <button class="btn bg-black text-white">Check out my work -></button>
+          </router-link>
       </div>
-      <br><br>
-  </div>
+    </div>
 </div>
 </template>
 
@@ -35,58 +33,19 @@
 </script>
 
 <style scoped>
-#aboutHead{
-  /* creating the text color gradient */
-  background: -webkit-linear-gradient(rgb(245, 56, 88), rgb(249, 113, 136));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation:slide 1.5s forwards ;
-  opacity: 0;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+#container{
+  background: url('https://i.ibb.co/fGVDR2G/198683.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
 }
-
-img[alt='profile']{
-  width: 15rem;
-  height: 18rem;
-  position: absolute;
-  left: 100px;
-  bottom: 150px;
+.row{
+  border: groove rgb(255, 81, 0) 5px;
+  padding: 50px;
+  border-radius: 2px;
 }
-img[alt='thought']{
-  width: 10rem;
-  height: 10rem;
-  position: absolute;
-  left: 310px;
-  bottom: 360px;
-  animation: float 2s ease-in-out infinite;
+img{
+  width: 300px;
+  height: 325px;
 }
-
-
-/* animations */
-@keyframes float {
-    0% { 
-      transform: translate(0,  0px);
-     }
-    50%  { 
-      transform: translate(0, 15px); 
-    }
-    100%   { 
-      transform: translate(0, -0px);
-     }    
-}
-@keyframes slide {
-  from {
-    opacity: 0;
-    transform: translateX(200px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-
-
-
-
 </style>

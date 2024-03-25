@@ -1,6 +1,6 @@
 <template>
+  <div class="container-fluid" v-if="$store.state.projects" id="container">
     <br><br>
-  <div class="container" v-if="$store.state.projects">
     <div class="heading">
       <h2 class="fs-1 fw-bold d-flex justify-content-center">
         Some of my work
@@ -53,7 +53,13 @@ export default {
 </script>
 
 <style scoped>
-.heading {
+#container{
+  background: url('https://i.ibb.co/fGVDR2G/198683.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+}
+/* .heading {
   background: -webkit-linear-gradient(rgb(245, 56, 88), rgb(249, 113, 136));
   -webkit-background-clip: text;
   background-clip: text;
@@ -62,7 +68,7 @@ export default {
   animation:slide 1.5s forwards ;
   opacity: 0;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
+} */
 #card{
     width: 400px;
     padding: 50px;
