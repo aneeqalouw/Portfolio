@@ -16,7 +16,7 @@
     <br><br>
     <div class="row">
       <router-link to="/about">
-        <button class="btn bg-black text-white fs-5">Learn more</button>
+        <button class="btn bg-black text-white fs-4">Learn more</button>
       </router-link>
     </div>
   </div>
@@ -27,19 +27,15 @@ export default {};
 </script>
 
 <style scoped>
-#container {
-  background: url('https://i.ibb.co/fGVDR2G/198683.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: fixed;
-}
+
 
 #text{
   color: white;
   
 }
 span{
-  color: rgb(255, 81, 0);
-  text-shadow: rgb(213, 101, 10);
+  font-weight: bold;
+  color: #D19D49;
+  text-shadow: #a06a14;
 }
 </style>

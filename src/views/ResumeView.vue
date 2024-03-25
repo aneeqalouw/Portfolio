@@ -1,19 +1,32 @@
 <template>
-  <div class="container-fluid text-white" id="container">
+  <div class="container-fluid text-white" >
       <!-- **education -->
-    <h2 class="lead fs-1 fw-bold d-flex justify-content-center">
+      <br><br>
+    <h2 class="display-4 fw-bold d-flex justify-content-center" id="head">
       Resume
     </h2>
     <br /><br />
-    <div class="container shadow" id="education" v-if="$store.state.education">
-      <h3 class="lead fs-3 justify-content-center fw-bold d-flex">Education</h3>
-      <br /><br />
-        <div class="card my-3" v-for="edu in education" :key="edu.id" id="educationBlock">
-              <div class="card-body">
-                <h5>
+    <div class="container shadow" v-if="$store.state.education">
+      <h3 class="lead fs-1 justify-content-center d-flex">Education</h3>
+      <br />
+        <div class="my-4 w-100" v-for="edu in education" :key="edu.id" style="width: 50rem;">
+              <div class="p-3" id="animated-border-box">
+                <h5 class="fw-bold fs-5">
                   {{ edu.title }}
+                  <span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_85_522)">
+                    <path d="M3.33 8L10 12L20 6L10 0L0 6H10V8H3.33ZM0 8V16L2 13.78V9.2L0 8ZM10 20L5 17L3 15.8V9.8L10 14L17 9.8V15.8L10 20Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_85_522">
+                    <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                  </span>
                 </h5>
-                <h6 class="fw-bolder">{{ edu.place }}</h6>
+                <h6 class="fw-bold fs-4">{{ edu.place }}</h6>
                 <p>{{ edu.description }}</p>
                 <p class="card-text">{{ edu.year }}</p>
               </div>
@@ -26,35 +39,27 @@
     <br /><br />
   
     <!-- **skills -->
-    <div class="container" v-if="$store.state.skills">
-      <h3 class="lead fs-2 justify-content-center fw-bold d-flex">Skills</h3>
-      <section
-        class="d-block d-md-flex justify-content-center justify-content-evenly"
-        id="skills"
-        v-if="$store.state.skills">
-        <div class="row d-flex justify-content-center" v-for="skill in skills" :key="skill.id">
-          <div class="flip-card" style="width: 15rem; height: 15rem">
-            <div class="flip-card-inside">
-              <div class="flip-card-front">
-                <img :src="skill.image" alt="icon" />
-              </div>
-              <div class="flip-card-behind">
-                <h2 class="lead fs-3">{{ skill.title }}</h2>
-                <p class="fs-5">{{ skill.level }}</p>
-              </div>
-            </div>
-          </div>
+    <h2 class="display-4">Skills</h2>
+    <br><br>
+  <div class="container d-flex gap-3 flex-wrap justify-content-center" v-if="$store.state.skills">
+    <div v-for="skill in skills" :key="skill.id">
+      <div class="row d-flex p-3" id="skills">
+        <!-- <div id="animated-border-box-glow"></div> -->
+        <div id="animated-border-box" class="p-3">
+          <h5>{{ skill.title }}</h5>
+          <p>{{ skill.description }}</p>
         </div>
-      </section>
-      <br /><br />
-      <h4 class="d-flex justify-content-center">Hover for details!</h4>
-      <br><br>
-      <br><br>
+      </div>
     </div>
-    <div v-else>
-      <SpinnerComp></SpinnerComp>
-    </div>
+
   </div>
+  <div v-else>
+    <SpinnerComp></SpinnerComp>
+  </div>
+</div>
+<br><br>
+<br><br>
+<br><br>
 </template>
 
 <script>
@@ -83,77 +88,69 @@ export default {
 </script>
 
 <style scoped>
-#container{
-  background: url('https://i.ibb.co/fGVDR2G/198683.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: fixed;
-}
-/* #education {
-  width: 1000x;
-  height: 500px;
-  /* background-image: linear-gradient(
-    rgb(255, 244, 248),
-    pink,
-    rgb(249, 162, 176)
-  ); */
 
-#educationBlock{
-  color: white;
-  background: transparent;
-  border: groove 5px rgb(255, 81, 0);
-  box-shadow: 10px 6px 3px 1px rgb(255, 0, 0);
-}
 
 /* **skills */
-img[alt="icon"] {
-  width: 200px;
-  height: 200px;
-  mix-blend-mode: multiply;
+#skills{
+    width: 18rem;
+    height: 15rem;
+  }
+#animated-border-box, #animated-border-box-glow{
+    position: relative;
+    overflow: hidden; 
+    z-index: 0;
+    border-radius: 3px;
+  }
+  
+  #animated-border-box-glow{
+    overflow: hidden;
+    filter: blur(20px);
+  }
+  
+  #animated-border-box:before, #animated-border-box-glow:before {
+    content: '';
+    z-index: -1;
+    text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(0deg);
+    position: absolute;
+      width: 99999px;
+      height: 99999px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: conic-gradient(#D19D49, #F4D885, #FCE07F, rgb(55, 36, 6) 25%);
+      animation: rotate 2.5s linear infinite;
+  }
+  
+  #animated-border-box:after {
+      content: '';
+      position: absolute;
+      z-index: -1;   
+      left: 3px;
+      top: 3px;
+      width: calc(100% - 5px);
+      height: calc(100% - 5px);
+      background: black;
+      border-radius: 3px;
+  }
+#head {
+  animation: slide 1.5s forwards ;
 }
-#skills {
-  height: max-content;
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
-
-.flip-card {
-  margin-top: 50px;
-  background-color: transparent;
-  width: 300px;
-  height: 250px;
-  border: 1px solid #f9b5d0;
-  perspective: 1000px; /* 3D effect */
-}
-
-.flip-card-inside {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-.flip-card:hover .flip-card-inside {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-behind {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #fdf4f6;
-  color: rgb(4, 4, 4);
-}
-
-.flip-card-behind {
-  color: rgb(5, 5, 5);
-  transform: rotateY(180deg);
-}
-
-
+  /* animation */
+  @keyframes rotate {
+      100% {
+          transform: translate(-50%, -50%) rotate(1turn);
+      }
+  }
 </style>

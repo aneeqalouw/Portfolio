@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid vh-100 text-white" id="container">
+  <div class="container-fluid vh-100 text-white">
     <br><br>
-    <h2 class="display-4 fw-bold">About me</h2>
+    <h2 class="display-4 fw-bold" id="head">About me</h2>
     <br><br>
     <div class="container shadow d-flex justtify-content-center" id="block">
       <div class="row" id="#text">
@@ -18,10 +18,15 @@
           </p> 
           <br><br><br><br>
           <router-link to="/projects">
-            <button class="btn bg-black text-white">Check out my work -></button>
+            <button class="btn fs-5 fw-bolder text-white border-light">Check out my work -></button>
           </router-link>
       </div>
     </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
 </div>
 </template>
 
@@ -33,19 +38,21 @@
 </script>
 
 <style scoped>
-#container{
-  background: url('https://i.ibb.co/fGVDR2G/198683.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: fixed;
-}
-.row{
-  border: groove rgb(255, 81, 0) 5px;
-  padding: 50px;
-  border-radius: 2px;
-}
 img{
-  width: 300px;
-  height: 325px;
+    width: 300px;
+    height: 325px;
+  }
+#head {
+  animation: slide 1.5s forwards ;
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 </style>

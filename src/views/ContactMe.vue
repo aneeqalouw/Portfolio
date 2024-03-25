@@ -1,7 +1,7 @@
 <template>
-  <div id="container">
-    <h2 class="fs-1 fw-bold d-block d-md-flex justify-content-center" id="head">
-      Contact me
+  <div class="container text-white">
+    <h2 class="display-4 fw-bold d-block d-md-flex justify-content-center" id="head">
+      Get in touch
     </h2>
     <br /><br />
   
@@ -133,20 +133,24 @@ export default {};
   width: 500px;
   height: 700px;
   padding: 80px;
-  border: solid black;
+  border: #D19D49 groove;
   
 
 }
-#container{
-  background: url('https://i.ibb.co/fGVDR2G/198683.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: fixed;
+input{
+  background: transparent;
+  border: #D19D49 solid 0.5px;
+}
+textarea{
+  background: transparent;
+  border: #D19D49 solid 0.5px;
 }
 
 
-/* animations */
-/* @keyframes slide {
+#head {
+  animation: slide 1.5s forwards ;
+}
+@keyframes slide {
   from {
     opacity: 0;
     transform: translateX(200px);
@@ -155,5 +159,5 @@ export default {};
     opacity: 1;
     transform: translateX(0%);
   }
-} */
+}
 </style>

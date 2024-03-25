@@ -39,10 +39,9 @@ export default {
 <style scoped>
 nav a.router-link-exact-active {
   font-weight: bold;
+  color: #C88D49;
   
 }
-a:hover {
-  color: #e80b79;
-}
+
 
 </style>
