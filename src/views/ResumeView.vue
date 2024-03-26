@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid text-white" >
       <!-- **education -->
-      <br><br>
+      <br>
     <h2 class="display-4 fw-bold d-flex justify-content-center" id="head">
       Resume
     </h2>
@@ -45,8 +45,8 @@
     <div v-for="skill in skills" :key="skill.id">
       <div class="row d-flex p-3" id="skills">
         <!-- <div id="animated-border-box-glow"></div> -->
-        <div id="animated-border-box" class="p-3">
-          <h5>{{ skill.title }}</h5>
+        <div id="animated-border-box" class="p-3 my-3">
+          <h4 class="fw-bold" >{{ skill.title }}</h4>
           <p>{{ skill.description }}</p>
         </div>
       </div>

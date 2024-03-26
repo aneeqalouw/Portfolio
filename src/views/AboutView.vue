@@ -1,9 +1,9 @@
 <template>
-  <div class="container-fluid vh-100 text-white">
+  <div class="container-fluid text-white">
     <br><br>
     <h2 class="display-4 fw-bold" id="head">About me</h2>
     <br><br>
-    <div class="container shadow d-flex justtify-content-center" id="block">
+    <div class="container d-flex justtify-content-center" id="block">
       <div class="row" id="#text">
           <p class="lead fs-3">I'm Aneeqa Louw, a 21 year old Junior Web Developer from Cape Town.</p>
           <p class="fs-5">
@@ -20,13 +20,13 @@
           <router-link to="/projects">
             <button class="btn fs-5 fw-bolder text-white border-light">Check out my work -></button>
           </router-link>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
       </div>
     </div>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
 </div>
 </template>
 
@@ -38,10 +38,6 @@
 </script>
 
 <style scoped>
-img{
-    width: 300px;
-    height: 325px;
-  }
 #head {
   animation: slide 1.5s forwards ;
 }

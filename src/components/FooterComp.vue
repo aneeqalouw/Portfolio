@@ -1,5 +1,6 @@
 <template>
 <div class="container-fluid bg-dark text-white" id="footer">
+  
   <p class="d-flex justify-content-center">Copyright &copy; {{ year }}. All rights reserved</p>
 </div>
 </template>

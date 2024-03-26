@@ -19,7 +19,7 @@
                     </p>
                     <div class="d-flex justify-content-evenly gap-2">
                         <a :href=" project.gitHub" class="btn btn-dark" target="_blank" id="linkBtn">Github</a>
-                        <a :href="project.netlify" class="btn btn-dark" target="_blank" id="linkBtn">Link to site</a>            
+                        <a :href="project.link" class="btn btn-dark" target="_blank" id="linkBtn">Link to site</a>            
                     </div>
                 </div>
             </div>

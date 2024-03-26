@@ -62,9 +62,8 @@ img[alt="profile"] {
   height: 10rem;
 }
 #box {
-  /* width: 30rem;
-  padding: 10px; */
   border: groove #D19D49;
+  background-color: black;
 }
 .quote2{
     position: relative;
