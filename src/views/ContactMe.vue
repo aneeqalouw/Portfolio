@@ -141,6 +141,7 @@ export default {};
 input{
   background: transparent;
   border: white solid 0.5px;
+  color: white;
 }
 textarea{
   background: transparent;

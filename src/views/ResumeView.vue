@@ -27,7 +27,7 @@
                   </span>
                 </h5>
                 <h6 class="fw-bold fs-4">{{ edu.place }}</h6>
-                <p>{{ edu.description }}</p>
+                <p class="lead">{{ edu.description }}</p>
                 <p class="card-text">{{ edu.year }}</p>
               </div>
         </div>
