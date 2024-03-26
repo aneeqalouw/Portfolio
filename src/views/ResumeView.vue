@@ -6,8 +6,8 @@
       Resume
     </h2>
     <br /><br />
+    <h3 class="lead fs-1 justify-content-center d-flex">Education</h3>
     <div class="container shadow" v-if="$store.state.education">
-      <h3 class="lead fs-1 justify-content-center d-flex">Education</h3>
       <br />
         <div class="my-4 w-100" v-for="edu in education" :key="edu.id" style="width: 50rem;">
               <div class="p-3" id="animated-border-box">
