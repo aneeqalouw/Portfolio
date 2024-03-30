@@ -6,6 +6,10 @@
       Resume
     </h2>
     <br /><br />
+    <div class="row">
+      <download-link :pdf-url="pdfUrl" :pdf-file-name="pdfFileName"/>
+    </div>
+    <br><br>
     <h3 class="lead fs-1 justify-content-center d-flex">Education</h3>
     <div class="container shadow" v-if="$store.state.education">
       <br />
@@ -64,6 +68,7 @@
 
 <script>
 import SpinnerComp from "@/components/SpinnerComp.vue";
+import DownloadLink from "@/components/DownloadLink";
 
 export default {
   computed: {
@@ -83,7 +88,16 @@ export default {
       alert('No data found')
     }
   },
-  components: { SpinnerComp },
+  components: { 
+    SpinnerComp ,
+    DownloadLink
+  },
+  data() {
+    return {
+      pdfUrl: '/path/to/my/file.pdf',
+      pdfFileName: 'my-pdf-file.pdf'
+    };
+  }
 };
 </script>
 
