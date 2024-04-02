@@ -55,12 +55,29 @@
           <p>{{ skill.description }}</p>
         </div>
       </div>
-    </div>
-
+      <br><br>
+    </div> 
+    <br><br>
   </div>
   <div v-else>
     <SpinnerComp></SpinnerComp>
-  </div>
+  </div> 
+  <!--  -->
+  <h4 class="display-6">Soft Skills</h4>
+      <div class="row d-flex gap-3 flex-wrap justify-content-center">
+        <div id="animated-border-box" class="p-3 my-3" style="width: 500px;">
+          <h4 class="fw-bold" >Punctual</h4>
+        </div>
+        <div id="animated-border-box" class="p-3 my-3" style="width: 500px;" >
+          <h4 class="fw-bold" >Quick learner</h4>
+        </div>
+        <div id="animated-border-box" class="p-3 my-3" style="width: 500px;" >
+          <h4 class="fw-bold" >Attention to detail</h4>
+        </div>
+        <div id="animated-border-box" class="p-3 my-3" style="width: 500px;" >
+          <h4 class="fw-bold" >Perseverant</h4>
+        </div>
+      </div>
 </div>
 <br><br>
 <br><br>
