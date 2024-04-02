@@ -6,9 +6,10 @@
       Resume
     </h2>
     <br /><br />
-    <div class="row">
-      <download-link :pdf-url="pdfUrl" :pdf-file-name="pdfFileName"/>
-    </div>
+    <a href="https://drive.google.com/file/d/1S962__SSoHBMN6gyCAbfTfr1OxmRM5Gu/view?usp=sharing" target="_blank" class="fs-4 gap-1" style="color: #D19D49">
+      View CV
+    </a>
+    <br><br>
     <br><br>
     <h3 class="lead fs-1 justify-content-center d-flex">Education</h3>
     <div class="container shadow" v-if="$store.state.education">
@@ -68,7 +69,7 @@
 
 <script>
 import SpinnerComp from "@/components/SpinnerComp.vue";
-import DownloadLink from "@/components/DownloadLink";
+
 
 export default {
   computed: {
@@ -89,8 +90,7 @@ export default {
     }
   },
   components: { 
-    SpinnerComp ,
-    DownloadLink
+    SpinnerComp 
   },
   data() {
     return {
@@ -167,4 +167,5 @@ export default {
           transform: translate(-50%, -50%) rotate(1turn);
       }
   }
+  /* D19D49 */
 </style>
