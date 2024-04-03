@@ -27,7 +27,12 @@ export default {};
 </script>
 
 <style scoped>
-
+#container{
+  background: url('https://i.ibb.co/2j7kzxs/Polish-20240325-173549960.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
 
 #text{
   color: white;

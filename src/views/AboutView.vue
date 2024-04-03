@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid text-white">
+  <div class="container-fluid text-white" id="container">
     <br><br>
     <h2 class="display-4 fw-bold" id="head">About me</h2>
     <br><br>
@@ -37,6 +37,12 @@
 </script>
 
 <style scoped>
+#container{
+  background: url('https://i.ibb.co/2j7kzxs/Polish-20240325-173549960.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
 #head {
   animation: slide 1.5s forwards ;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid text-white" v-if="$store.state.projects">
+  <div class="container-fluid text-white bg-black" v-if="$store.state.projects">
     <br><br>
     <div class="heading">
       <h2 class="display-4 fw-bold d-flex justify-content-center" id="head">

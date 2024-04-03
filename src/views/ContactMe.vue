@@ -1,5 +1,5 @@
 <template>
-  <div class="container text-white">
+  <div class="container-fluid text-white bg-black">
     <h2 class="display-4 fw-bold d-block d-md-flex justify-content-center" id="head">
       Contact me
     </h2>

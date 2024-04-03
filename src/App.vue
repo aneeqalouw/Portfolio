@@ -1,5 +1,5 @@
 <template>
-  <NavBar></NavBar>
+  <NavBar/>
   <main>
     <router-view/>
     <div style="display: none;">

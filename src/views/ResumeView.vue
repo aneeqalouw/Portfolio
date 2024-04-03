@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid text-white" >
+  <div class="container-fluid text-white" id="resume">
       <!-- **education -->
       <br>
     <h2 class="display-4 fw-bold d-flex justify-content-center" id="head">
@@ -12,7 +12,7 @@
     <br><br>
     <br><br>
     <h3 class="lead fs-1 justify-content-center d-flex">Education</h3>
-    <div class="container shadow" v-if="$store.state.education">
+    <div class="container" v-if="$store.state.education">
       <br />
         <div class="my-4 w-100" v-for="edu in education" :key="edu.id" style="width: 50rem;">
               <div class="p-3" id="animated-border-box">
@@ -42,10 +42,21 @@
     </div>
     <br /><br />
     <br /><br />
-  
+    <h3 class="lead fs-1 justify-content-center d-flex">Experience</h3>
+    <br><br>
+    <div class="container">
+      <div class="w-100" style="width: 50rem;" >
+        <div class="p-3" id="animated-border-box" >
+          <h6 class="fw-bold fs-4">LC Studio</h6>
+          <p class="lead">Student Intern</p>
+          <p class="card-text">2024 - Present</p>
+          </div>
+      </div>
+    </div>
+    <br /><br />
+    <br /><br />
     <!-- **skills -->
     <h2 class="display-4">Skills</h2>
-    <br><br>
   <div class="container d-flex gap-3 flex-wrap justify-content-center" v-if="$store.state.skills">
     <div v-for="skill in skills" :key="skill.id">
       <div class="row d-flex p-3" id="skills">
@@ -64,7 +75,7 @@
   </div> 
   <!--  -->
   <h4 class="display-6">Soft Skills</h4>
-      <div class="row d-flex gap-3 flex-wrap justify-content-center">
+      <div class="container d-flex gap-3 flex-wrap justify-content-center">
         <div id="animated-border-box" class="p-3 my-3" style="width: 500px;">
           <h4 class="fw-bold" >Punctual</h4>
         </div>
@@ -78,10 +89,10 @@
           <h4 class="fw-bold" >Perseverant</h4>
         </div>
       </div>
+      <br><br>
+      <br><br>
+      <br><br>
 </div>
-<br><br>
-<br><br>
-<br><br>
 </template>
 
 <script>
@@ -119,7 +130,9 @@ export default {
 </script>
 
 <style scoped>
-
+#resume{
+  background-color: black
+}
 
 /* **skills */
 #skills{
