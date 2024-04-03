@@ -12,12 +12,11 @@
     <br><br>
     <br><br>
     <h3 class="lead fs-1 justify-content-center d-flex">Education</h3>
-    <div class="container" v-if="$store.state.education">
+    <div class="container">
       <br />
-        <div class="my-4 w-100" v-for="edu in education" :key="edu.id" style="width: 50rem;">
+      <div class="my-4 w-100" style="width: 50rem;">
               <div class="p-3" id="animated-border-box">
-                <h5 class="fw-bold fs-5">
-                  {{ edu.title }}
+                <h5 class="fw-bold fs-5">  
                   <span>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_85_522)">
@@ -31,14 +30,58 @@
                     </svg>
                   </span>
                 </h5>
-                <h6 class="fw-bold fs-4">{{ edu.place }}</h6>
-                <p class="lead">{{ edu.description }}</p>
-                <p class="card-text">{{ edu.year }}</p>
+                <h6 class="fw-bold fs-4">Life Choices Coding Academy</h6>
+                <p class="lead">Full Stack Web Development Course</p>
+                <p>Achieved certificate of excellence with modules such and HTML and Javascript</p>
+                <p class="card-text">2023 - 2024</p>
               </div>
         </div>
-    </div>
-    <div v-else>
-      <SpinnerComp></SpinnerComp>
+        <div class="my-4 w-100" style="width: 50rem;">
+              <div class="p-3" id="animated-border-box">
+                <h5 class="fw-bold fs-5">  
+                  <span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_85_522)">
+                    <path d="M3.33 8L10 12L20 6L10 0L0 6H10V8H3.33ZM0 8V16L2 13.78V9.2L0 8ZM10 20L5 17L3 15.8V9.8L10 14L17 9.8V15.8L10 20Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_85_522">
+                    <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                  </span>
+                </h5>
+                <h6 class="fw-bold fs-4">STADIO</h6>
+                <p class="lead">Film and TV Makeup Course</p>
+                <p>Studied modules such as special effects makeup and entrepreneurship</p>
+                <p class="card-text">2021</p>
+              </div>
+        </div>
+        <div class="my-4 w-100" style="width: 50rem;">
+              <div class="p-3" id="animated-border-box">
+                <h5 class="fw-bold fs-5">  
+                  <span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_85_522)">
+                    <path d="M3.33 8L10 12L20 6L10 0L0 6H10V8H3.33ZM0 8V16L2 13.78V9.2L0 8ZM10 20L5 17L3 15.8V9.8L10 14L17 9.8V15.8L10 20Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_85_522">
+                    <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                  </span>
+                </h5>
+                <h6 class="fw-bold fs-4">Rylands High School</h6>
+                <p class="lead">National Senior Certificate</p>
+                <p>Passed matric with Maths and IT</p>
+                <p class="card-text">2016 - 2020</p>
+              </div>
+        </div>
+
+
     </div>
     <br /><br />
     <br /><br />
@@ -49,6 +92,7 @@
         <div class="p-3" id="animated-border-box" >
           <h6 class="fw-bold fs-4">LC Studio</h6>
           <p class="lead">Web Development Intern</p>
+          <p>Work experience and learning journey based on web development concepts and modules</p>
           <p class="card-text">2024 - Present</p>
           </div>
       </div>
