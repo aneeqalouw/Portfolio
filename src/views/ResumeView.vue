@@ -163,12 +163,6 @@ export default {
   },
   components: { 
     SpinnerComp 
-  },
-  data() {
-    return {
-      pdfUrl: '/path/to/my/file.pdf',
-      pdfFileName: 'my-pdf-file.pdf'
-    };
   }
 };
 </script>
