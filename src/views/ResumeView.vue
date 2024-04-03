@@ -6,7 +6,7 @@
       Resume
     </h2>
     <br /><br />
-    <a href="https://drive.google.com/file/d/1S962__SSoHBMN6gyCAbfTfr1OxmRM5Gu/view?usp=sharing" target="_blank" class="fs-4 gap-1" style="color: #D19D49">
+    <a href="https://drive.google.com/file/d/1TLatAVZ0CFVp-glZafc_SnbyzoUda1nA/view?usp=sharing" target="_blank" class="fs-4 gap-1" style="color: #D19D49">
       View CV
     </a>
     <br><br>
