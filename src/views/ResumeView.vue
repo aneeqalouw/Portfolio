@@ -48,7 +48,7 @@
       <div class="w-100" style="width: 50rem;" >
         <div class="p-3" id="animated-border-box" >
           <h6 class="fw-bold fs-4">LC Studio</h6>
-          <p class="lead">Web development Intern</p>
+          <p class="lead">Web Development Intern</p>
           <p class="card-text">2024 - Present</p>
           </div>
       </div>
