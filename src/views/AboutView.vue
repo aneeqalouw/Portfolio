@@ -3,8 +3,8 @@
     <br><br>
     <h2 class="display-4 fw-bold" id="head">About me</h2>
     <div class="container d-flex justtify-content-center" id="block">
-      <div class="row my-5" id="#text">
-          <p class="lead fs-3">I'm Aneeqa Louw, a 21 year old Junior Web Developer from Cape Town.</p>
+      <div class="container my-5" id="#text">
+          <p class="lead fs-3">I'm Aneeqa Louw, a Junior Web Developer from Surrey Estate.</p>
           <p class="fs-5">
             Born on 26/11/2002, into the tech generation. <br> <br>
             I started my coding journey back in high school, 2018, doing Delphi and
@@ -15,9 +15,8 @@
             I also love getting in touch with my creative side doing photo editing and creating digital designs.
           </p> 
           <br><br>
-          <br><br>
           <router-link to="/projects">
-            <button class="btn fs-5 fw-bolder text-white border-light">Check out my work -></button>
+            <button class="btn fs-5 fw-bolder text-white border-light">Check out my work ></button>
           </router-link>
       </div>
     </div>
@@ -34,8 +33,8 @@
 <style scoped>
 #container{
   background: url('https://i.ibb.co/2j7kzxs/Polish-20240325-173549960.jpg');
-    background-size: cover;
-    background-position: fixed;
+  background-size: cover;
+  background-position: fixed;
 }
 #head {
   animation: slide 1.5s forwards ;
@@ -49,5 +48,11 @@
     opacity: 1;
     transform: translateX(0%);
   }
+}
+@media(min-width: 1280px){
+  #container{
+    height: 100vh;
+  }
+
 }
 </style>

@@ -3,8 +3,6 @@
     <br><br>
     <br><br>
     <br><br>
-    <br><br>
-    <br><br>
     <div class="row d-flex justify-content-center align-items-center" id="text">
       <h1 class="display-1">
         Aneeqa <span>/</span> Louw

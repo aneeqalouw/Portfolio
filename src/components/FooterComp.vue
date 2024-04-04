@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid bg-dark text-white" id="footer">
+<div class="container-fluid bg-dark text-white vh-25" id="footer">
   <p class="d-flex justify-content-center">Copyright &copy; {{ year }}. All rights reserved</p>
 </div>
 </template>
@@ -16,6 +16,8 @@ export default {
 
 <style scoped>
 #footer{
-  height: 30px;
+  height: 40px;
+  position: relative;
+  bottom: 0;
 }
 </style>
