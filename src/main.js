@@ -4,7 +4,7 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap'
+// import 'bootstrap'
 import './assets/css/style.css'
 
 

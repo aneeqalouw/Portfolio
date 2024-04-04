@@ -1,6 +1,5 @@
 <template>
 <div class="container-fluid bg-dark text-white" id="footer">
-  
   <p class="d-flex justify-content-center">Copyright &copy; {{ year }}. All rights reserved</p>
 </div>
 </template>
@@ -9,7 +8,6 @@
 export default {
   data() {
     return {
-      // getting the current year to be displayed in the footer
       year: new Date().getFullYear(),
     };
   },

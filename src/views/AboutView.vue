@@ -2,7 +2,7 @@
   <div class="container-fluid text-white" id="container">
     <br><br>
     <h2 class="display-4 fw-bold" id="head">About me</h2>
-    <br><br>
+    <br>
     <div class="container d-flex justtify-content-center" id="block">
       <div class="row" id="#text">
           <p class="lead fs-3">I'm Aneeqa Louw, a 21 year old Junior Web Developer from Cape Town.</p>
@@ -23,7 +23,6 @@
           <br><br>
           <br><br>
           <br><br>
-          <br><br>
       </div>
     </div>
 </div>
@@ -39,7 +38,6 @@
 <style scoped>
 #container{
   background: url('https://i.ibb.co/2j7kzxs/Polish-20240325-173549960.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: fixed;
 }
