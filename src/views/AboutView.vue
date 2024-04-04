@@ -2,9 +2,8 @@
   <div class="container-fluid text-white" id="container">
     <br><br>
     <h2 class="display-4 fw-bold" id="head">About me</h2>
-    <br>
     <div class="container d-flex justtify-content-center" id="block">
-      <div class="row" id="#text">
+      <div class="row my-5" id="#text">
           <p class="lead fs-3">I'm Aneeqa Louw, a 21 year old Junior Web Developer from Cape Town.</p>
           <p class="fs-5">
             Born on 26/11/2002, into the tech generation. <br> <br>
@@ -20,9 +19,6 @@
           <router-link to="/projects">
             <button class="btn fs-5 fw-bolder text-white border-light">Check out my work -></button>
           </router-link>
-          <br><br>
-          <br><br>
-          <br><br>
       </div>
     </div>
 </div>
