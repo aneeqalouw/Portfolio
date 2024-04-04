@@ -1,17 +1,12 @@
 <template>
   <div class="container-fluid text-white" id="resume">
       <!-- **education -->
-      <br>
-    <h2 class="display-4 fw-bold d-flex justify-content-center" id="head">
-      Resume
-    </h2>
-    <br /><br />
-    <a href="https://drive.google.com/file/d/1TLatAVZ0CFVp-glZafc_SnbyzoUda1nA/view?usp=sharing" target="_blank" class="fs-4 gap-1" style="color: #D19D49">
+    <br /> <br>
+    <a href="https://drive.google.com/file/d/1TLatAVZ0CFVp-glZafc_SnbyzoUda1nA/view?usp=sharing" target="_blank" class="fs-3 gap-1 d-flex justify-content-center" style="color: #D19D49">
       View CV
     </a>
     <br><br>
-    <br><br>
-    <h3 class="lead fs-1 justify-content-center d-flex">Education</h3>
+    <h3 class="lead display-3 justify-content-center d-flex">Education</h3>
     <div class="container">
       <br />
       <div class="my-4 w-100" style="width: 50rem;">
@@ -85,7 +80,7 @@
     </div>
     <br /><br />
     <br /><br />
-    <h3 class="lead fs-1 justify-content-center d-flex">Experience</h3>
+    <h3 class="lead display-3 justify-content-center d-flex">Experience</h3>
     <br><br>
     <div class="container">
       <div class="w-100" style="width: 50rem;" >
@@ -100,7 +95,7 @@
     <br /><br />
     <br /><br />
     <!-- **skills -->
-    <h2 class="display-4">Skills</h2>
+    <h2 class="display-3">Skills</h2>
   <div class="container d-flex gap-3 flex-wrap justify-content-center" v-if="$store.state.skills">
     <div v-for="skill in skills" :key="skill.id">
       <div class="row d-flex p-3" id="skills">
@@ -118,7 +113,7 @@
     <SpinnerComp></SpinnerComp>
   </div> 
   <!--  -->
-  <h4 class="display-6">Soft Skills</h4>
+  <h4 class="display-5">Soft Skills</h4>
       <div class="container d-flex gap-3 flex-wrap justify-content-center">
         <div id="animated-border-box" class="p-3 my-3" style="width: 500px;">
           <h4 class="fw-bold" >Punctual</h4>
@@ -131,6 +126,12 @@
         </div>
         <div id="animated-border-box" class="p-3 my-3" style="width: 500px;" >
           <h4 class="fw-bold" >Perseverant</h4>
+        </div>
+        <div id="animated-border-box" class="p-3 my-3" style="width: 500px;" >
+          <h4 class="fw-bold" >Creative</h4>
+        </div>
+        <div id="animated-border-box" class="p-3 my-3" style="width: 500px;" >
+          <h4 class="fw-bold" >Problem solver</h4>
         </div>
       </div>
       <br><br>

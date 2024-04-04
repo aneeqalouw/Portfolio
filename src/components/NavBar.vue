@@ -13,7 +13,7 @@
                 About
             </router-link>
             <router-link to="/resume" class="nav-link active">
-                Resume
+                Education & Experience
             </router-link>
             <router-link to="/projects" class="nav-link active">
                 Projects
